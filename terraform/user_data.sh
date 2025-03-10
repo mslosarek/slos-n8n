@@ -40,7 +40,7 @@ sudo -iu $USER bash -c 'chmod 600 $HOME/.ssh/config && chown $USER:$USER $HOME/.
 sudo -iu $USER bash -c 'ssh-keyscan -t rsa,ecdsa,ed25519 github.com >> $HOME/.ssh/known_hosts'
 
 # Clone repository
-sudo -iu $USER bash -c 'cd $HOME/app/source && git clone git@github.com:Slos/slos-n8n.git .'
+sudo -iu $USER bash -c 'cd $HOME/app/source && git clone git@github.com:mslosarek/slos-n8n.git .'
 
 # Install dependencies
 sudo -iu $USER bash -c 'cd $HOME/app/source && npm install'

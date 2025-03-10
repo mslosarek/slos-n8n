@@ -82,7 +82,7 @@ module.exports = {
       host: "n8n.slos.io",
       key: "~/.ssh/slos-n8n.pem",
       ref: "origin/main",
-      repo: "git@github.com:Slos/slos-n8n.git",
+      repo: "git@github.com:mslosarek/slos-n8n.git",
       path: "/home/ec2-user/app",
       "pre-deploy-local": "echo 'Starting deployment...'",
       "pre-deploy": "cd /home/ec2-user/app/source && mkdir -p /home/ec2-user/app/source",
