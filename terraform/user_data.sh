@@ -93,7 +93,7 @@ sudo chown -R nginx:nginx /var/log/nginx /var/cache/nginx /etc/nginx
 sudo systemctl enable nginx && sudo systemctl start nginx
 
 # Get SSL certificate
-sudo certbot --nginx -d n8n.slos.io --non-interactive --agree-tos --email mark@slosarek.com --staging
+sudo certbot --nginx -d n8n.slos.io --non-interactive --agree-tos --email mark@slos.io
 
 # Update configuration with SSL
 sudo tee /etc/nginx/conf.d/n8n.conf << 'NGINX_SSL'
