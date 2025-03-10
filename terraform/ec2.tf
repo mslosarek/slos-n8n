@@ -2,7 +2,7 @@
 resource "aws_instance" "n8n" {
   ami           = data.aws_ami.amazon_linux_2023.id
   instance_type = "t3.small"
-  subnet_id     = "subnet-0354e7d5510c8de41"
+  subnet_id     = var.subnet_id
   key_name      = "slos-n8n"
 
   root_block_device {
