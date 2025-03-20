@@ -51,7 +51,8 @@ function getEnvVarsSync() {
     DB_POSTGRESDB_PASSWORD: getSSMParamSync('/n8n/slos/db_password', ''),
     DB_POSTGRESDB_SCHEMA: 'public',
     DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED: 'false',
-    N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: 'true'
+    N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: 'true',
+    N8N_CUSTOM_EXTENSIONS: './custom_nodes',
   };
   console.log('Environment variables loaded:', Object.keys(envVars));
   return envVars;
